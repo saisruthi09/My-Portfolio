@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fca2ba7fc6.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/simages.png" class="logo" alt="Logo"> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+                </nav>
+                
+<div class="header-text">
+    <p>Java Developer </p>
+    <h1>Hi , I'm <br><span>Sai</span> <span>Sruthi</span><br> from Chennai</h1>
+    <div class="Social-icons1">
+        <a href="https://github.com/saisruthi09"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://leetcode.com/u/Sai_Sruthi_09/"><i class="fa-solid fa-puzzle-piece"></i></a>
+        <a href="https://www.linkedin.com/in/sai-sruthi-69b201276/"><i class="fa-brands fa-linkedin"></i></a>
+    
+    </div>
+    
+</div>
+        </div>
+    </div>
+<!-------------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about2.png" alt="Sai Sruthi">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a final-year student passionate about web development and problem-solving.
+                        Skilled in HTML, CSS, JavaScript, and Java, I build responsive and efficient applications.
+                        I enjoy tackling challenges and continuously learning to enhance my technical abilities.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')">Work</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Java</span><br>Core Java </li>
+                            <li><span>HTML/CSS</span><br>Web Development</li>
+                            <li><span>JavaScript</span><br>Web Development</li>
+                            <li><span>SQL</span><br>Database Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Developed a real-time attendance system using PCA and LDA for accurate face recognition from webcam input. Implemented the face recognition module and managed CSV-based logging of attendance with timestamps.
+                            </li>
+                            <li><span>UiPath</span><br>Automated Form Filling Bot built in UiPath Studio is an RPA solution that automates the repetitive task of entering data into digital forms. It extracts information from sources like Excel or databases and inputs it into web or desktop forms accurately, reducing manual work and minimizing human errors.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Undergraduate - 8.29 (2022-2026)</span><br>Panimalar Engineering College </li>
+                            <li><span>HSC - 88.11% (2021)</span><br>Revoor Padmanabha Chetty's Matric Hr Sec School</li>
+                            <li><span>SSLC - 82.24% (2019)</span><br>Revoor Padmanabha Chetty's Matric Hr Sec School</li>
+
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <!---------------Projects----------------->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="project-list">
+                <div>
+     <i class="fa-brands fa-python"></i>
+    <h2 class="content-h2">Real-time Attendance System</h2>
+    <p class="para">Developed a real-time attendance system using PCA and LDA for accurate face recognition from webcam input. Implemented the face recognition module and managed CSV-based logging of attendance with timestamps.</p>
+    <a href="https://github.com/saisruthi09/AttendanceSystemUsingLDAbasedFaceRecognisation" class="link">View Project</a>
+    </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2 class="content-h2">Automated Form Filling Bot</h2>
+                    <p class="para">An Automated Form Filling Bot built in UiPath Studio is an RPA solution that automates the repetitive task of entering data into digital forms. It extracts information from sources like Excel or databases and inputs it into web or desktop forms accurately, reducing manual work and minimizing human errors.</p>
+                    <a href="https://github.com/saisruthi09/Automated-Form-Filling-Bot-" class="link">View Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="content-h2">My Portfolio</h2>
+        
+                    <p class="para">This is my personal portfolio website, showcasing my skills, projects, and experience as a Java Developer. It is built using HTML, CSS, and JavaScript.</p>
+        
+                    <a href="https://github.com/saisruthi09/My-Portfolio" class="link">View Project</a>
+                </div>
+            </div>
+        </div>        
+        <!-----------------Contact----------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>saisruthi992003@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 7806954997</p>
+                        <div class="Social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sai-sruthi-69b201276/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/My Resume.pdf" download class="btn btn2">Download Resume</a>
+                        </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name"placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+
+                </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Sai Sruthi. All rights reserved.</p>
+        </div>
+        
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+            </script>
+            <script>
+                const scriptURL = '<https://script.google.com/macros/s/AKfycbzxHUF1ZFnOXlddYMzS78eOAbkhFc-ieYD7TGOHorS3XdyGhSb4136nYVOB-_xBFZnu/execL>'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                      msg.innerHTML = "Message Sent Successfully"
+                      setTimeout(function(){
+                        msg.innerHTML = ""
+                      }, 5000);
+                      form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+
+</body>
+</html>
